@@ -1,0 +1,49 @@
+
+
+<!-- // ********* GAME DOES NOT WORK YET!,***** -->
+    <!-- //  WILL TRY TO SUBMIT AGAIN ON SATURDAY --> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MineSweeper💣</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body onload="OnInIt()">
+    <h1>MineSweeper💣</h1>
+    <div class=" buttons">
+        <button class="btn" onclick="OnChangeLevel(4,2)">Beginner</button>
+        <button class="btn" onclick="OnChangeLevel(8,14)">Medium</button>
+        <button class="btn" onclick="OnChangeLevel(12,32)">Expert</button>
+        
+        
+    </div>
+    <button class = "restart-btn" onclick=" OnInIt()">🙂</button>
+
+    <div class="timer">
+        <h2> 000⏱️</h2>
+    </div>
+    
+    <div class="lives">
+        <h2>❤️❤️❤️</h2> 
+    </div>
+    <!-- <div onclick="OnCellClicked(this, i ,j )" oncontextmenu=" onCellMarked(event)"> </div> -->
+    </div>
+    <table cellspacing="0" oncontextmenu="return false">
+        <tbody class="board"></tbody>
+    </table>
+
+    <div class = "footer" >MineSweeper By Yahalomit Tzuberi</div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/game.js"></script>
+
+</body>
+
+</html>
